@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pneumonia Laboratory</title>
+    <link rel = "icon" href = "..\static\images\logo.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/footer.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body class="contactBody">
+
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Pneumonia Laboratory</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5000/" >HOME</a></li>
+                    <li><a href="http://127.0.0.1:5000/about">ABOUT</a></li>
+                    <li><a href="http://127.0.0.1:5000/test">TEST</a></li>
+                    <li><a href="http://127.0.0.1:5000/contact" style="color:#ff7200;">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+         <header>
+            <h1 style="color: black;">Contact Us</h1>
+            <p style="color: black;font-size: 17px;">We automated manual processes of pneumonia workflow
+                detection with the intention of providing more reliable and faster machine learning
+                solutions with minimal human bias World trusted company since 1995</p>
+         </header>
+        <div class="content">
+            <div class="content-form">
+                <section>
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"style="font-size: 20px;"></i>
+                    <h2 style="font-size: 20px;">address</h2>
+                    <p>
+                        23 , Deshamanya, <br>
+                        H K Dharmadasa Mawatha, <br>
+                        00200
+                    </p>
+                </section><br>
+
+                <section>
+                    <i class="fa fa-phone fa-2x" aria-hidden="true" style="font-size: 20px;"></i>
+                    <h2 style="font-size: 20px;">Phone</h2>
+                    <p>123-456-78901548</p>
+                </section><br>
+
+                <section>
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"style="font-size: 20px;"></i>
+                    <h2 style="font-size: 20px;">E-mail</h2>
+                    <p>PneumoniaLaboratory@gmail.com</p>
+                </section>
+            </div>
+        </div>
+
+      <form>
+        <div class="form">
+            <div class="right">
+              <div class="contact-form">
+                  <span><b>Full Name</b></span>
+                  <input type="text" required>
+              </div>
+
+              <div class="contact-form">
+                  <span><b>E-mail Id</b></span>
+                  <input type="E-mail" required>
+              </div>
+              <div class="contact-form">
+                  <span><b> Type your Message....</b></span>
+                  <textarea name="text"></textarea>
+              </div>
+
+              <div class="contact-form">
+                  <input type="submit" name="submit">
+              </div>
+            </div>
+          </div>
+    </form>
+    </div>
+    </div>
+    <footer class="footerBar">
+         <iframe src="{{ url_for('footer') }}" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    </footer>
+</body>
+</html>
