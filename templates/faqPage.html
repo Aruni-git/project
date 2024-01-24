@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pneumonia Laboratory</title>
+    <link rel = "icon" href = "..\static\images\logo.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/footer.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background: #FFE0B2;">
+
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Pneumonia Laboratory</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5000/" >HOME</a></li>
+                    <li><a href="http://127.0.0.1:5000/about">ABOUT</a></li>
+                    <li><a href="http://127.0.0.1:5000/test">TEST</a></li>
+                    <li><a href="http://127.0.0.1:5000/contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">What are the prposed treatmets for pneumonia?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Your treatment will depend on the type of pneumonia you have, how severe it is, and your general health.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">What are the complications of pnemonia?</h1>
+                <!-- faq answer -->
+                <ul class="faq-body">
+                    <p>Pneumonia may cause complications, especially in people with weakened immune systems or chronic conditions, such as diabetes.
+                        Complications may include:</p>
+                        <ul>
+                    <li><b>Worsened chronic conditions.</b>
+                        If you have certain preexisting health conditions, pneumonia could make them worse.
+                        These conditions include congestive heart failure and emphysema. For certain people,
+                        pneumonia increases their risk of having a heart attack.</li>
+                    <li><b>Bacteremia.</b>
+                    Bacteria from the pneumonia infection may spread to your bloodstream.
+                    This can lead to dangerously low blood pressure, septic shock, and, in some cases,
+                        organ failure.</li>
+                    <li><b>Lung abscesses.</b>
+                        These are cavities in the lungs that contain pus.
+                        Antibiotics can treat them. Sometimes they may require drainage or surgery to
+                        remove the pus.</li>
+                    <li><b>Impaired breathing.</b>
+                        You may have trouble getting enough oxygen when you breathe. Y
+                        ou may need to use a ventilator.</li></ul>
+                </ul>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h1 class="faq-page">Pneumonia in pregnancy</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Pneumonia that occurs during pregnancy is called maternal pneumonia.
+                        Pregnant people are more at risk of developing conditions like pneumonia.
+                        This is due to the natural suppression of the immune system that happens during pregnancy.
+                        The symptoms of pneumonia don’t differ by trimester. However, you may notice some of
+                        them more later on in your pregnancy due to other discomforts you may be encountering. <br>
+                        If you’re pregnant, contact your doctor as soon as you start experiencing
+                        symptoms of pneumonia. Maternal pneumonia can lead to a variety of complications,
+                        such as premature birth and low birth weight.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <footer class="footerBar">
+         <iframe src="{{ url_for('footer') }}" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    </footer>
+
+</body>
+</html>

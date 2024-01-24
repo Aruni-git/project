@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
+    <title>Pneumonia Laboratry</title>
+    <link rel = "icon" href = "..\static\images\logo.png" type = "image/x-icon">
+<!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">-->
+<!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fontawsom-all.min.css') }}">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>    
+
+</head>
+
+<style>
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #33cc33;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+
+    <body>
+    <div class="step2">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Pneumonia Laboratory</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5000/" >HOME</a></li>
+                    <li><a href="http://127.0.0.1:5000/about">ABOUT</a></li>
+                    <li><a href="http://127.0.0.1:5000/test" style="color:#ff7200;">TEST</a></li>
+                    <li><a href="http://127.0.0.1:5000/contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div style="color: rgb(90, 90, 90);">
+                        <h3 style="color: #26A69A; padding: 15px; font-size: 23px;">Select your Chest X-Ray image to upload</h3>
+                        <form action="step3" method="POST" enctype="multipart/form-data">
+                            <div style="margin-left: 25px; float: left;">
+                                <input type="file" name="image" id="image" accept="image/png, image/gif, image/jpeg" required><br>
+                                <img src="" id="image-tag" width="300px" height="300px"  style=" border: 3px solid #ddd; border-radius: 4px; padding: 5px;"/>
+                            </div>
+                            <br><br><br><br><br>
+                            <center style="color: rgb(255, 255, 255);">
+                                <p>&emsp;&emsp;&emsp;&emsp; Please upload a clear Chest X-ray image</p>
+                                &emsp;&emsp;&emsp;&emsp;<a href="http://127.0.0.1:5000/step2"><button class="button" type="submit" style="vertical-align:middle; width: 250px;"><span style="font-size: 23px, position: center;">Upload Image</span></button></a>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    </body>
+    
+</html>
+
+<script type="text/javascript">
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#image-tag').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#image").change(function(){
+        readURL(this);
+    });    
+</script>
+
+  
+  
+  
