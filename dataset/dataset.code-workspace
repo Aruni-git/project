@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "dataset",
+			"path": "../../../Desktop/dataset"
+		},
+		{
+			"name": "project",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

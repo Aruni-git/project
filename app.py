@@ -67,7 +67,7 @@ def footer():
 
 @app.route("/step2")
 def step2():
-    return render_template('pneumoniaTestPage2.html')
+    return render_template('breastCancerTestPage2.html')
 
 @app.route("/step3", methods=["GET", "POST"])
 def step3():
