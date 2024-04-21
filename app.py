@@ -67,7 +67,7 @@ def footer():
 
 @app.route("/step2")
 def step2():
-    return render_template('pneumoniaTestPage2.html')
+    return render_template('breastCancerTestPage2.html')
 
 @app.route("/step3", methods=["GET", "POST"])
 def step3():
@@ -93,7 +93,7 @@ def step3():
 
     x= predictXray()
     print(x)
-    return render_template('pneumoniaTestPage3.html', test_result = x, imgName=image.filename  )
+    return render_template('breastCancerTestPage3.html', test_result = x, imgName=image.filename  )
 
 def predictXray():
 
