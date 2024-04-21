@@ -93,7 +93,7 @@ def step3():
 
     x= predictXray()
     print(x)
-    return render_template('pneumoniaTestPage3.html', test_result = x, imgName=image.filename  )
+    return render_template('breastCancerTestPage3.html', test_result = x, imgName=image.filename  )
 
 def predictXray():
 
