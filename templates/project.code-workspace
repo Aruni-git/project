@@ -1,7 +1,9 @@
 {
-    "settings": {
-        "githubPullRequests.ignoredPullRequestBranches": [
-            "main"
-        ]
-    }
+	"folders": [
+		{
+			"name": "project",
+			"path": ".."
+		}
+	],
+	"settings": {}
 }

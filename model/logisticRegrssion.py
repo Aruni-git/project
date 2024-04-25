@@ -5,33 +5,30 @@ from tensorflow.keras.layers import Input, Dense, Flatten
 from tensorflow.keras.models import Model
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-import numpy as np
 from glob import glob
-import matplotlib.pyplot as plt
 
 # Provide image size
 IMAGE_SIZE = [224, 224]
 
 # Give our training and testing path
-training_data = '../../breast_xray/train'
-testing_data = '../../breast_xray/test'
+training_data = 'r/Users/aruni/VScode_Workspace/project/breast_xray/train'
+testing_data = 'r/Users/aruni/VScode_Workspace/project/breast_xray/test'
 
 # Find how many classes are present in the train dataset
-folders = glob('../../breast_xray/train/*')
+folders = glob('r/Users/aruni/VScode_Workspace/project/breast_xray/train/*')
 
-# ANN Model
+# Logistic Regression Model
 input_shape = IMAGE_SIZE + [3]
 model = tf.keras.Sequential([
     Flatten(input_shape=input_shape),
-    Dense(1024, activation='relu'),
-    Dense(512, activation='relu'),
-    Dense(len(folders), activation='softmax')
+    Dense(len(folders), activation='softmax')  # Output layer with softmax for multiclass classification
 ])
 
 # View the structure of the model
 model.summary()
 
-# Compiling our model
+# Compiling our model with 'sparse_categorical_crossentropy' if the labels are integers
+# Use 'categorical_crossentropy' if using one-hot encoded labels.
 model.compile(
   loss='categorical_crossentropy',
   optimizer='adam',
@@ -67,4 +64,4 @@ r = model.fit(
 )
 
 # Save the model
-model.save('ann_model.h5')
+model.save('logistic_regression_model.h5')
