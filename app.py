@@ -19,9 +19,9 @@ poll_data = {
 # Creates an instance of the Flask class
 app = Flask(__name__)
 
-# MODEL_PATH = 'model/pneumonia_model.h5'
-# MODEL_PATH = 'model/20epoches_model.h5'
-MODEL_PATH = 'model/vgg16.h5'
+#MODEL_PATH = 'model/ann_model.h5'
+MODEL_PATH = 'model/logistic_regression_model.h5'
+#MODEL_PATH = 'model/vgg16.h5'
 # MODEL_PATH = 'model/vgg19.h5'
 
 # app.config["ALL_UPLOADS"] = "static/images/Testing_Image_Folder/Test"

@@ -12,27 +12,33 @@
 }
 .step2{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/step1.png);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/HomePageImg1.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
+}
+.test{
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/HomePageImg1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 .contactBody{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/contactUs.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/HomePageImg1.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
-    background-attachment: fixed;
-    background-color: rgba(255,255,255,0.3);
-    background-blend-mode: lighten;
+
 }
 .about{
-    width: 100%;
-    background: #101010;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../images/HomePageImg1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
 }
 .symptoms{
     width: 100%;
@@ -62,8 +68,8 @@
 }
 
 .logo{
-    color: #ff7200;
-    font-size: 35px;
+    color: #ff5066;
+    font-size: 20px;
     font-family: Arial;
     padding-left: 20px;
     float: left;
@@ -107,7 +113,7 @@ ol{
 }
 
 .menu ul li a:hover{
-    color: #ff7200;
+    color: #ff5066;
 }
 
 .search{
@@ -121,7 +127,7 @@ ol{
     width: 200px;
     height: 40px;
     background: transparent;
-    border: 1px solid #ff7200;
+    border: 1px solid #ff5066;
     margin-top: 13px;
     color: #fff;
     border-right: none;
@@ -135,8 +141,8 @@ ol{
 .btn{
     width: 100px;
     height: 40px;
-    background: #ff7200;
-    border: 2px solid #ff7200;
+    background: #ff5066;
+    border: 2px solid #ff5066;
     margin-top: 13px;
     color: #fff;
     font-size: 15px;
@@ -183,7 +189,7 @@ ol{
 }
 .content h1{
     font-family: 'Times New Roman';
-    font-size: 50px;
+    font-size: 22px;
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
@@ -238,7 +244,7 @@ ol{
 .content .cn{
     width: 160px;
     height: 40px;
-    background: #ff7200;
+    background: #ff5066;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -260,7 +266,7 @@ ol{
 }
 
 .content span{
-    color: #ff7200;
+    color: #ff5066;
     font-size: 65px
 }
 
@@ -272,7 +278,7 @@ ol{
 .btnn{
     width: 240px;
     height: 40px;
-    background: #ff7200;
+    background: #ff5066;
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -283,7 +289,7 @@ ol{
 }
 .btnn:hover{
     background: #fff;
-    color: #ff7200;
+    color: #ff5066;
 }
 .btnn a{
     text-decoration: none;
@@ -302,7 +308,7 @@ ol{
     transition: 0.3s ease;
 }
 .icons ion-icon:hover{
-    color: #ff7200;
+    color: #ff5066;
 }
 #topBtn{
     position: fixed;
