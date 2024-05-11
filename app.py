@@ -20,8 +20,8 @@ poll_data = {
 app = Flask(__name__)
 
 #MODEL_PATH = 'model/ann_model.h5'
-MODEL_PATH = 'model/logistic_regression_model.h5'
-#MODEL_PATH = 'model/vgg16.h5'
+#MODEL_PATH = 'model/logistic_regression_model.h5'
+MODEL_PATH = 'model/vgg16.h5'
 # MODEL_PATH = 'model/vgg19.h5'
 
 # app.config["ALL_UPLOADS"] = "static/images/Testing_Image_Folder/Test"
@@ -93,7 +93,10 @@ def step3():
 
     x= predictXray()
     print(x)
-    return render_template('breastCancerTestPage3.html', test_result = x, imgName=image.filename  )
+    algoptions = ['None','ANN', 'VGG16', 'Logistic Regresstion']
+    return render_template('breastCancerTestPage3.html', test_result = x, imgName=image.filename , algoptions=algoptions )
+
+
 
 def predictXray():
 
@@ -114,7 +117,7 @@ def predictXray():
 
 
     if prediction[0][0] < prediction[0][1]:  # Printing the prediction of model.
-        print(f'Person is affected with Pneumonia. {prediction}')
+        print(f'Person is affected with Cancer. {prediction}')
         return 1
     else:
         print(f'Person is safe.{prediction}')
@@ -123,6 +126,7 @@ def predictXray():
     # print(f'Predictions: {prediction}')
 
     return none
+
 
 
 
